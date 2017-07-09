@@ -14,16 +14,16 @@ module.exports = function (app, db) {
             if (error) {
                 res.send(errorMsg)
             } else {
-                console.log(result);
+                // console.log(result);
                 res.send(result.ops[0])
             }
         })
     })
 
-    app.get('/notes?id=', (req, res) => {
+    app.get('/notes/:id', (req, res) => {
         const id = req.params.id
         const details = { '_id': new ObjectID(id) }
-        db.collection('notes').findOne(details, (err, item) => {
+        db.collection('note').findOne(details, (err, item) => {
             if (err) {
                 res.send(errorMsg)
             } else {
