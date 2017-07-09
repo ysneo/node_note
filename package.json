@@ -1,0 +1,19 @@
+{
+  "name": "node_note",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/ysneo/node_note.git",
+  "author": "ysneo <jinchn728@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
