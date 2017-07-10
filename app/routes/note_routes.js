@@ -52,7 +52,7 @@ module.exports = function (app, db) {
         })
     })
 
-    // to modify a document in collection
+    // to modify a document in collection which is already exist
     // todo: if you fail to supply a body or title,
     // the PUT request will nullify those fields on the note in the database.
     app.put('/notes/:id', (req, res) => {
